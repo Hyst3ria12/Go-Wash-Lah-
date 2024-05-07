@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Go Wash Lah! - Gallery</title>
+  <style>
+    /* Basic CSS styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #004e75; /* Blue background color */
+      color: white;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #f2f2f2;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px 20px;
+    }
+    nav a:hover {
+      background-color: #ddd; /* Change background color on hover */
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      text-align: center;
+      background-color: #fff; /* White background */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      border-radius: 10px; /* Rounded corners */
+      overflow: hidden; /* Hide overflowing content */
+      border: 2px solid #004e75; /* Add border */
+    }
+    footer {
+      background-color: #333; /* Dark footer */
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      bottom: 0;
+      width: 100%;
+      font-size: 15px;
+      overflow-x: hidden;
+    }
+    .footer-info {
+      display: inline-block;
+      margin: 0 30px;
+      padding: 10px 50px;
+    }
+    .fa {
+      padding: 5px;
+      font-size: 15px;
+      width: 15px;
+      text-align: center;
+      text-decoration: none;
+      margin: 3px 2px;
+      border-radius: 50%;
+    }
+    .fa:hover {
+      opacity: 0.7;
+    }
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+    .mySlides {
+      display: none;
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: background-color 0.3s ease; /* Smooth transition */
+    }
+    .prev {
+      left: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+    }
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%); /* Center horizontally */
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      border-radius: 5px;
+    }
+    .caption-container {
+      text-align: center;
+      background-color: #333; /* Dark background for caption */
+      padding: 10px 0;
+      color: white;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .column {
+      float: left;
+      width: 25%;
+    }
+    .demo {
+      opacity: 0.6;
+    }
+    .active, .demo:hover {
+      opacity: 1;
+    }
+    .cursor {
+      cursor: pointer;
+    }
+	
+	.dropdown{
+	display: inline-block;
+
+}	
+.dropdown button{
+		background-color: ##f2f2f2;
+		color:black;
+		border: none;
+		height: 30px;
+		width: 130px;
+		border-radius: 3px;
+		cursor:pointer;
+		font-family: Arial, sans-serif;
+		font-size: 15px;
+}
+
+.dropdown a{
+	
+		display: block;
+		color: black;
+		text-decoration: none;
+		padding: 10px 15px;
+	
+}
+
+.dropdown .content{
+		display: none;
+		min-width: 100px;
+		box-shadow: 2px 2px 5px black;
+	
+}
+
+.dropdown:hover .content{
+	display: block;
+}
+	
+	
+	
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo-container">
+    <h1>Go Wash Lah!</h1>
+  </div>
+  <center> Follow Us on our Social:<a href="https://www.facebook.com/profile.php?id=61552734535316" class="fa fa-facebook"></a></center>
+</header>
+
+<nav>
+  <img src="go1.png" alt="Go Wash Lah!" style="height: 50px; margin-right: 10px;"> 
+  <a href="about.html">About</a>
+  <a href="promo.html">Promo</a>
+  <a href="price.html">Pricing</a>
+  <div class="dropdown">
+  <button>Customer related</button>
+  <div class="content">
+	<a href="gallery.html">Gallery</a>
+	<a href="reviews.html">Customer Review</a>
+	
+	</div>
+
+  </div>
+  <a href="help.html">Help</a>
+  <a href="contact us.html">Contact</a>
+  <img src="go1.png" alt="Go Wash Lah Logo" style="height: 50px; margin-right: 10px;"> 
+</nav>
+
+<div class="container">
+  <h2 style="color: #004e75; margin-top: 20px;">THE GALLERY</h2>
+  <div class="mySlides">
+    <div class="numbertext">1 / 9</div>
+    <img src="1.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">2 / 9</div>
+    <img src="2.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">3 / 9</div>
+    <img src="3.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">4 / 9</div>
+    <img src="4.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">5 / 9</div>
+    <img src="5.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">6 / 9</div>
+    <img src="6.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">7 / 9</div>
+    <img src="7.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">8 / 9</div>
+    <img src="8.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">9 / 9</div>
+    <img src="9.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Snowy Mountains">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Snowy Mountains">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="9.jpg" style="width:100%" onclick="currentSlide(9)" alt="Snowy Mountains">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="10.jpg" style="width:100%" onclick="currentSlide(10)" alt="Snowy Mountains">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="11.jpg" style="width:100%" onclick="currentSlide(11)" alt="Snowy Mountains">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="12.jpg" style="width:100%" onclick="currentSlide(12)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-info">Privacy Policy</div>
+  <div class="footer-info">Copyright © 2024 Go Wash Lah!. All rights reserved.</div>
+  <div class="footer-info">Follow Us on our Social:<a href="https://www.facebook.com/profile.php?id=61552734535316" class="fa fa-facebook"></a></div>
+</footer>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function toggleGallery() {
+    var gallery = document.getElementsByClassName('container')[0];
+    gallery.style.display = gallery.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
+</body>
+</html>
